@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: karate.runner.AppTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.995 s - in karate.runner.AppTest
