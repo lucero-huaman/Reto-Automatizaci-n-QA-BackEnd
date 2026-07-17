@@ -1,6 +1,4 @@
-
 package karate.runner;
-
 import com.intuit.karate.junit5.Karate;
 
 class AppTest {
@@ -9,7 +7,6 @@ class AppTest {
     Karate testApi() {
         return Karate.run("classpath:features");
     }
-
 }
 
 

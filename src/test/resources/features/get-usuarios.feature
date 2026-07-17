@@ -1,5 +1,5 @@
 @get @usuarios
-Feature: Listar usuarios
+Feature: Obtener usuarios
 
 Background:
     * url baseUrl
@@ -20,3 +20,4 @@ Scenario: Obtener lista de usuarios exitosamente
     Given path 'usuarios'
     When method GET
     Then status 200
+

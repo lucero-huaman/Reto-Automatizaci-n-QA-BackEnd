@@ -1,0 +1,31 @@
+{
+  "usuarios": {
+    "valido": {
+      "nome": "Usuario Automatizacion",
+      "email": "usuario.automatizacion@email.com",
+      "password": "123456",
+      "administrador": "true"
+    },
+
+    "emailInvalido": {
+      "nome": "Usuario Email Invalido",
+      "email": "correoinvalido",
+      "password": "123456",
+      "administrador": "true"
+    },
+
+    "emailDuplicado": {
+      "nome": "Usuario Duplicado",
+      "email": "duplicado@email.com",
+      "password": "123456",
+      "administrador": "true"
+    },
+
+    "camposVacios": {
+      "nome": "",
+      "email": "",
+      "password": "",
+      "administrador": ""
+    }
+  }
+}
