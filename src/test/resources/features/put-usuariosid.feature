@@ -20,9 +20,6 @@ Scenario: Actualizar usuario existente
 
     And match response.message == 'Registro alterado com sucesso'
 
-
-
-    
 Scenario: Actualizar usuario con campos vacios
 
     Given path 'usuarios', usuarioConCarrito._id

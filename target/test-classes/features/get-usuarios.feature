@@ -6,7 +6,7 @@ Background:
 
 Scenario: Validar estructura de usuarios
 
-    * def usuarioSchema = read('classpath:schemas/usuario-schema.json')
+    * def usuarioSchema = read('classpath:schemas/usuarioSchema.json')
 
     Given path 'usuarios'
     When method GET
