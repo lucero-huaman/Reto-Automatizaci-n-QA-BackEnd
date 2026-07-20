@@ -1,31 +1,45 @@
 {
-  "usuarios": {
+    "usuarios": {
     "valido": {
-      "nome": "Usuario Automatizacion",
-      "email": "usuario.automatizacion@email.com",
-      "password": "123456",
-      "administrador": "true"
+        "nome": "Usuario Automatizacion",
+        "email": "usuario.automatizacion@email.com",
+        "password": "123456",
+        "administrador": "true"
     },
 
     "emailInvalido": {
-      "nome": "Usuario Email Invalido",
-      "email": "correoinvalido",
-      "password": "123456",
-      "administrador": "true"
+        "nome": "Usuario Email Invalido",
+        "email": "correoinvalido",
+        "password": "123456",
+        "administrador": "true"
     },
 
-    "emailDuplicado": {
-      "nome": "Usuario Duplicado",
-      "email": "duplicado@email.com",
-      "password": "123456",
-      "administrador": "true"
+    "usuarioDuplicado": {
+        "nome": "Fulano da Silva",
+        "email": "fulano@qa.com",
+        "password": "teste",
+        "administrador": "true"
     },
 
     "camposVacios": {
-      "nome": "",
-      "email": "",
-      "password": "",
-      "administrador": ""
+        "nome": "",
+        "email": "",
+        "password": "",
+        "administrador": ""
+    },
+    
+    "usuarioEliminado": {
+        "_id": "0N6KxJ6eN3QJoId9"
+    },
+
+    "usuarioConCarrito": {
+        "_id": "0uxuPY0cbmQhpEz1"
+    },
+    "usuarioActualizar": {
+        "nome": "Usuario Actualizado",
+        "email": "usuario.actualizado@qa.com",
+        "password": "123456",
+        "administrador": "true"
     }
-  }
+    }
 }

@@ -3,17 +3,13 @@
 Feature: Registrar usuarios
 
 Background:
-
     * url baseUrl
-
     * def data = read('classpath:/request/Resource.json')
-
     * def usuarioValido = data.usuarios.valido
     * def usuarioEmailInvalido = data.usuarios.emailInvalido
-    * def usuarioDuplicado = data.usuarios.emailDuplicado
+    * def usuarioDuplicado = data.usuarios.usuarioDuplicado
     * def usuarioCamposVacios = data.usuarios.camposVacio
-
-
+    
 Scenario: Registrar usuario correctamente
 
     * def timestamp = java.lang.System.currentTimeMillis()
@@ -35,3 +31,11 @@ Scenario: Registrar usuario con email invalido
     And request usuarioEmailInvalido
     When method POST
     Then status 400
+
+
+Scenario: Registrar usuario con email duplicado
+    Given path 'usuarios'
+    And request usuarioDuplicado
+    When method POST
+    Then status 400
+    And match response.message == 'Este email já está sendo usado'
